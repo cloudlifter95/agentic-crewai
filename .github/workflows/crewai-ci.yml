@@ -49,5 +49,6 @@ jobs:
           docker-compose logs -f
 
       - name: Inspect the container
+        if: failure()
         run: |
           docker-compose exec crewai ls -l /app
