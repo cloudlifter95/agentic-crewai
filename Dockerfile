@@ -5,6 +5,7 @@ WORKDIR /app
 COPY requirements.txt requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 # ENV OPENAI_API_KEY=value
-COPY ./app /app
+COPY . .
 
-CMD ["python", "main.py"]
+CMD ["ls -alR"]
+# CMD ["python", "main.py"]
