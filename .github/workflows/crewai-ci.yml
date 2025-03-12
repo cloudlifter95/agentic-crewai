@@ -43,3 +43,7 @@ jobs:
         run: |
           echo "Displaying logs due to failure:"
           docker-compose logs -f
+
+      - name: Inspect the container
+        run: |
+          docker-compose exec crewai ls -l /app
