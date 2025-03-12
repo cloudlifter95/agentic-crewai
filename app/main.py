@@ -4,8 +4,8 @@ from tqdm import tqdm
 from crewai import Agent, Task, Crew, LLM
 from dotenv import load_dotenv
 
-# Load environment variables from a specific path
-load_dotenv(dotenv_path='config/.env')
+# # Load environment variables from a specific path
+# load_dotenv(dotenv_path='config/.env')
 # Load API Key
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
