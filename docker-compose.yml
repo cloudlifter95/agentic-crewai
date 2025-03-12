@@ -10,6 +10,6 @@ services:
     #   - OPENAI_API_KEY=${OPENAI_API_KEY}
     volumes:
       - .:/app
-    working_dir: /app
+    working_dir: $GITHUB_WORKSPACE/app
     command: ["ls", "-alR"]
     # command: ["python", "main.py"]
