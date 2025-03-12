@@ -35,7 +35,7 @@ jobs:
 
       - name: Run CrewAI workflow
         run: |
-          docker-compose exec crewai python main.py
+          docker-compose run crewai
 
       - name: Shut down Docker Compose
         run: |
