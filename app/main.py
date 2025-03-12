@@ -53,4 +53,5 @@ def main():
     print("Final Output:", result)
 
 if __name__ == "__main__":
-    main()
+    print('Good')
+    # main()
