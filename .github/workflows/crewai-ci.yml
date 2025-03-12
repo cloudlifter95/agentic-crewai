@@ -23,7 +23,7 @@ jobs:
           ls -alR
 
       - name: Get environment variables
-        run: echo TESTKEY=${{ secrets.TEST }}
+        run: echo TESTKEY=${{ secrets.TEST2 }}
 
       - name: Set up Docker
         uses: docker/setup-buildx-action@v2
