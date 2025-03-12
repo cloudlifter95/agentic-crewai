@@ -12,4 +12,4 @@ services:
       - .:/app
     working_dir: /app
     command: ["ls", "-alR"]
-    command: ["python", "main.py"]
+    # command: ["python", "main.py"]
