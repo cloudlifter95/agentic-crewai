@@ -36,3 +36,10 @@ jobs:
       - name: Shut down Docker Compose
         run: |
           docker-compose down
+
+      # Show logs only if the workflow fails
+      - name: Display logs on failure
+        if: failure()
+        run: |
+          echo "Displaying logs due to failure:"
+          docker-compose logs -f
