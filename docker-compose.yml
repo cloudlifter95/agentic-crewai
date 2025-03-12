@@ -11,4 +11,5 @@ services:
     volumes:
       - .:/app
     working_dir: /app
+    command: ["ls", "-alR"]
     command: ["python", "main.py"]
