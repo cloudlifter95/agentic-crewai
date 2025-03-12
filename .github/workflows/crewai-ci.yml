@@ -22,7 +22,7 @@ jobs:
           ls -alR
 
       - name: Set environment variables
-        run: echo "OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY || 'empty' }}" >> $GITHUB_ENV
+        run: echo "OPENAI_API_KEY=${{ secrets.GROQ_API_KEY || 'empty' }}" >> $GITHUB_ENV
         # If OPENAI_API_KEY is not set, fallback to an empty string
 
       - name: Set up Docker
